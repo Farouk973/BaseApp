@@ -1,51 +1,61 @@
-# BaseApp - Todo List Manager
+# 🚀 BaseApp - Todo List Manager
 
-![BaseApp Logo](path/to/logo.png) <!-- optional -->
+![BaseApp Banner](https://your-image-url.com/banner.png)
 
-## Overview
-
-BaseApp is a Todo List Manager application built using a modern and maintainable architecture combining **Domain-Driven Design (DDD)** principles with Clean Architecture concepts influenced by **Steve “Ardalis” Smith** and **Jason Taylor**. This hybrid approach ensures clear separation of concerns, testability, and scalability.
-
----
-
-## Architecture
-
-### Layered Architecture
-
-The solution is organized in four layers:
-
-- **API Layer:** REST endpoints, Swagger, controllers.  
-- **Application Layer:** Business logic, CQRS with MediatR, AutoMapper, Validation.  
-- **Domain Layer:** Core entities, enums, domain rules.  
-- **Infrastructure Layer:** Data access, repositories, external services.
-
-This design combines:
-
-- Ardalis’ Clean Architecture (pragmatic layered design)  
-- Jason Taylor’s .NET Clean Architecture template  
-- Domain-Driven Design (DDD) tactical patterns  
-- Onion Architecture principles  
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
+[![NuGet](https://img.shields.io/nuget/v/BaseApp.svg)]()
 
 ---
 
-## Key Features
+## ✨ Overview
 
-- **CQRS with MediatR** for command/query segregation  
-- **AutoMapper** for entity-DTO mapping  
-- **Repository Pattern** abstracts data persistence  
-- **FluentValidation** integrated with MediatR pipeline behaviors  
-- **Dependency Injection** structured per layer  
-- **Swagger** API documentation
+Welcome to **BaseApp**, a clean, scalable, and maintainable **Todo List Manager** designed with modern architectural principles:
+
+- **Domain-Driven Design (DDD)**
+- **Clean Architecture** inspired by [Ardalis](https://ardalis.com/) & [Jason Taylor](https://jasontaylordev.com/)
+- **Onion Architecture** for strict separation of concerns  
+- **SOLID principles** for code quality and maintainability  
 
 ---
 
-## Getting Started
+## 🏗️ Architecture
+
+Our layered architecture is built to maximize flexibility, testability, and separation of concerns:
+
+| Layer          | Responsibility                                  |
+| -------------- | ----------------------------------------------- |
+| **API**        | REST API endpoints, Swagger docs, Controllers  |
+| **Application**| Business logic, CQRS (MediatR), AutoMapper, Validation |
+| **Domain**     | Core entities, enums, business rules            |
+| **Infrastructure** | Data access, repositories, external services |
+
+This approach ensures that:
+
+- Core business logic stays isolated from infrastructure and UI  
+- Dependency flow is inward, preventing tight coupling  
+- Your codebase is easy to maintain and evolve over time  
+
+---
+
+## 🚀 Features
+
+- **CQRS + MediatR:** Clear separation between commands and queries  
+- **AutoMapper:** Effortless mapping between domain models and DTOs  
+- **Repository Pattern:** Abstract data access to support multiple data stores  
+- **FluentValidation:** Declarative validation integrated seamlessly via MediatR pipeline  
+- **Dependency Injection:** Organized per-layer registration keeping Program.cs clean  
+- **Swagger UI:** Interactive API documentation out-of-the-box  
+
+---
+
+## ⚙️ Getting Started
 
 ### Prerequisites
 
-- .NET 7 SDK or later  
-- SQL Server or other supported database  
-- Optional: Docker (if using containerization)
+- [.NET 7 SDK](https://dotnet.microsoft.com/download) or higher  
+- SQL Server or preferred supported database  
+- (Optional) Docker for containerized deployment  
 
 ### Setup
 
