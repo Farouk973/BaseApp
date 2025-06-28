@@ -1,4 +1,4 @@
-# 🚀 BaseApp - Todo List Manager
+# 🚀 BaseApp - Base architecure for a TODO Project
 
 ![BaseApp Banner](https://your-image-url.com/banner.png)
 
@@ -23,11 +23,11 @@ Welcome to **BaseApp**, a clean, scalable, and maintainable **Todo List Manager*
 
 Our layered architecture is built to maximize flexibility, testability, and separation of concerns:
 
-| Layer          | Responsibility                                  |
-| -------------- | ----------------------------------------------- |
-| **API**        | REST API endpoints, Swagger docs, Controllers  |
-| **Application**| Business logic, CQRS (MediatR), AutoMapper, Validation |
-| **Domain**     | Core entities, enums, business rules            |
+| Layer            | Responsibility                                  |
+| ---------------- | ----------------------------------------------- |
+| **API**          | REST API endpoints, Swagger docs, Controllers  |
+| **Application**  | Business logic, CQRS (MediatR), AutoMapper, Validation |
+| **Domain**       | Core entities, enums, business rules            |
 | **Infrastructure** | Data access, repositories, external services |
 
 This approach ensures that:
@@ -49,15 +49,49 @@ This approach ensures that:
 
 ---
 
+## 🧰 Technologies & Packages
+
+This project targets **.NET 6.0** and uses the following key NuGet packages:
+
+- `AutoMapper.Extensions.Microsoft.DependencyInjection` (v12.0.1)  
+- `BCrypt.Net-Next` (v4.0.3) for password hashing  
+- `FluentValidation` (v11.5.1) with `FluentValidation.DependencyInjectionExtensions`  
+- `MediatR` (v12.5.0) and `MediatR.Extensions.Microsoft.DependencyInjection` (v11.1.0)  
+
+### Sample `.csproj` Dependencies Configuration
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaseApp.Domain\BaseApp.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.1" />
+    <PackageReference Include="MediatR" Version="12.5.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="FluentValidation" Version="11.5.1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
 ## ⚙️ Getting Started
 
 ### Prerequisites
 
-- [.NET 7 SDK](https://dotnet.microsoft.com/download) or higher  
+- .NET 6 SDK  
 - SQL Server or preferred supported database  
 - (Optional) Docker for containerized deployment  
 
-### Setup
+### Setup & Run
 
 ```bash
 git clone https://github.com/Farouk973/BaseApp.git
@@ -65,3 +99,8 @@ cd BaseApp
 dotnet restore
 dotnet build
 dotnet run --project BaseApp.API
+
+## 📬 Contact
+
+Created with ❤️ by **Farouk** —  
+[Visit my website](https://felfeltech.vercel.app/)
