@@ -83,6 +83,7 @@ This project targets **.NET 6.0** and uses the following key NuGet packages:
   </PropertyGroup>
 
 </Project>
+```
 ## ⚙️ Getting Started
 
 ### Prerequisites
@@ -99,7 +100,7 @@ cd BaseApp
 dotnet restore
 dotnet build
 dotnet run --project BaseApp.API
-
+```
 ## 📬 Contact
 
 Created with ❤️ by **Farouk** —  
