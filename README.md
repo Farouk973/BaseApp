@@ -1,4 +1,4 @@
-# 🚀 BaseApp - Base architecture for a TODO Project
+# 🚀 BaseApp - Clean architecture for a TODO Project
 
 ![BaseApp Banner](https://your-image-url.com/banner.png)
 
